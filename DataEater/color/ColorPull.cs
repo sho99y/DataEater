@@ -19,6 +19,7 @@ namespace DataEater
                 for (int i = 0; i <= dataColor.Length - 1; i+=3) 
                 {
                     ColorSet colorSet = new ColorSet(dataColor[i], dataColor[i + 1], dataColor[i + 2]);
+                    Console.WriteLine($"{dataColor[i]}, {dataColor[i + 1]}, {dataColor[i + 2]}");
                     DataDot.choseColor.Add(colorSet);
                 }
             }

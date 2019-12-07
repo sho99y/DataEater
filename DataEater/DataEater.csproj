@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="source\Color.txt" />
+    <Content Include="source\SnakeEaterIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

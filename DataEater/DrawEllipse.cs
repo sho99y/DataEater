@@ -20,7 +20,7 @@ namespace DataEater
 
         public void reDraw(List<int> list)
         {
-            drawPlace.Clear(Color.White);
+            drawPlace.Clear(Color.FromArgb(200, 200, 200));
             drawList(list);
         }
 

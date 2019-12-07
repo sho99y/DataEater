@@ -33,7 +33,7 @@ namespace DataEater
 
         public void clearPlace()
         {
-            drawPlace.Clear(Color.White);
+            drawPlace.Clear(Color.FromArgb(200,200,200));
         }
 
         public void drawList(List<int> list)
