@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.DataGrid = new System.Windows.Forms.DataGridView();
             this.DrawPlace = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -60,7 +61,7 @@
             // 
             // DrawPlace
             // 
-            this.DrawPlace.BackColor = System.Drawing.SystemColors.Window;
+            this.DrawPlace.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.DrawPlace.Location = new System.Drawing.Point(19, 11);
             this.DrawPlace.Name = "DrawPlace";
             this.DrawPlace.Size = new System.Drawing.Size(856, 776);
@@ -79,7 +80,7 @@
             // 
             // forelBut
             // 
-            this.forelBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.forelBut.Font = new System.Drawing.Font("Lato", 19.75F, System.Drawing.FontStyle.Bold);
             this.forelBut.Location = new System.Drawing.Point(11, 529);
             this.forelBut.Name = "forelBut";
             this.forelBut.Size = new System.Drawing.Size(244, 68);
@@ -90,7 +91,7 @@
             // 
             // ScaleText
             // 
-            this.ScaleText.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ScaleText.Font = new System.Drawing.Font("Lato", 19.75F, System.Drawing.FontStyle.Bold);
             this.ScaleText.Location = new System.Drawing.Point(313, 543);
             this.ScaleText.Name = "ScaleText";
             this.ScaleText.Size = new System.Drawing.Size(58, 39);
@@ -126,10 +127,10 @@
             // 
             // HowMany
             // 
-            this.HowMany.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HowMany.Font = new System.Drawing.Font("Lato", 19.75F, System.Drawing.FontStyle.Bold);
             this.HowMany.Location = new System.Drawing.Point(313, 615);
             this.HowMany.Name = "HowMany";
-            this.HowMany.Size = new System.Drawing.Size(58, 38);
+            this.HowMany.Size = new System.Drawing.Size(58, 39);
             this.HowMany.TabIndex = 8;
             this.HowMany.Text = "10";
             this.HowMany.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -150,7 +151,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Lato", 19.75F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(11, 603);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(244, 68);
@@ -161,9 +162,10 @@
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(347, 753);
+            this.Clear.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clear.Location = new System.Drawing.Point(303, 695);
             this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(75, 23);
+            this.Clear.Size = new System.Drawing.Size(119, 52);
             this.Clear.TabIndex = 10;
             this.Clear.Text = "Clear";
             this.Clear.UseVisualStyleBackColor = true;
@@ -171,9 +173,10 @@
             // 
             // Refresh
             // 
-            this.Refresh.Location = new System.Drawing.Point(347, 782);
+            this.Refresh.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Bold);
+            this.Refresh.Location = new System.Drawing.Point(303, 753);
             this.Refresh.Name = "Refresh";
-            this.Refresh.Size = new System.Drawing.Size(75, 23);
+            this.Refresh.Size = new System.Drawing.Size(119, 52);
             this.Refresh.TabIndex = 11;
             this.Refresh.Text = "Refresh";
             this.Refresh.UseVisualStyleBackColor = true;
@@ -189,8 +192,9 @@
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "DataEater";
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DrawPlace)).EndInit();
             this.panel1.ResumeLayout(false);

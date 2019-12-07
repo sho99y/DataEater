@@ -216,10 +216,6 @@ namespace DataEater
             }
             countGroup++;
             lastMassCheck.Add(valueLastMass);
-
-            reDraw(MainList);
-            circle(lastCenterX, lastCenterY, radius * 2);
-            Thread.Sleep((int)speed);
         }
         #endregion
 
